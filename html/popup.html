@@ -1,0 +1,45 @@
+<!--
+ * @Date: 2022-08-10 11:16:58
+ * @LastEditors: Lq
+ * @LastEditTime: 2022-08-10 18:59:49
+ * @FilePath: \learnningNotes\chorme\extensions\html\popup.html
+-->
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/popup.css" />
+</head>
+<body>
+    <h2>懒狗抢座位专用插件</h2>
+    <div>
+        <select class="area">
+            <option>选择你的学习区域</option>
+            <option value = "101699933-101700080">南湖二楼开敞座位区</option>
+            <option value = "101700081-101700176">南湖卡座</option>
+            <option value = "101699605-101699776">南湖分馆一楼中庭开敞座位区</option>
+            <option value = "101699777-101699932">南湖分馆一楼开敞座位区</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <h2>选择日期</h2>
+        日期: <input class="date" type="date" />
+    </div>
+    <div>
+    <h3>选择你的学习时间</h3>
+        开始时间：<input class="start" type="time">
+        <br>
+        结束时间：<input class="end" type="time">
+    </div>
+    <br/>
+    <div>
+        <button class="now">现在就学</button>
+        <button class="reserve">六点开抢</button>
+    </div>
+
+    <h2 id="Countdown"></h2>
+</body>
+<script src="../js/popup.js"></script>
+</html>
