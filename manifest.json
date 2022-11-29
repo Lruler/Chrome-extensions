@@ -18,7 +18,7 @@
 	"permissions":["storage", "cookies"],
 	"content_scripts":[{
 		"js":["js/content.js"],
-		"matches":["http://kjyy.ccnu.edu.cn/ClientWeb/xcus/*"],
+		"matches":["http://*/*", "https://*/*","http://kjyy.ccnu.edu.cn/ClientWeb/xcus/*"],
 		"run_at":"document_idle"
 	}]
 }
