@@ -23,7 +23,9 @@
 
 
 然后点击狗头出现下图，就可以愉快的抢座位啦
-注意⚠️ 一定要在http://kjyy.ccnu.edu.cn/ClientWeb/xcus/ic2/Default.aspx这个网页下进行操作，在其他网页进行操作是不起作用的
+注意⚠️ 一定要在http://kjyy.ccnu.edu.cn/ClientWeb/xcus/ic2/Default.aspx
+
+这个网页下进行操作，在其他网页进行操作是不起作用的
 
 **注意**
 
