@@ -25,6 +25,15 @@ function getNowFormatDate() {
     return currentdate;
 }
 
+const shuffle = (arr) => {
+  let len = arr.length, random
+  while(len != 0){
+      random = (Math.random() * len--) >>> 0; // 无符号右移位运算符向下取整(注意这里必须加分号，否则报错)
+      [arr[len], arr[random]] = [arr[random], arr[len]] // ES6的结构赋值实现变量互换
+  }
+  return arr
+}
+
 const Request = (url, options = {}) => {
   url = `${url}`;
   const isFile = options.body instanceof FormData;
@@ -43,7 +52,6 @@ const Request = (url, options = {}) => {
     .then((response) => {
       if (response.ok) {
         return response.json().then((res) => {
-          console.log(res);
           return res;
         });
       } else {
@@ -69,10 +77,19 @@ const Reserve = (area, start, end, date) => {
         let range = area.split('-')
         const s = start.slice(0, 2) + start.slice(-2)
         const e = end.slice(0, 2) + end.slice(-2)
+        let arr = [];
         for (let i = +range[0]; i < +range[1]; ++i) {
+            arr.push(i)
+        }
+        arr = shuffle(arr)
+        for (let i = 0; i < arr.length; ++i) {
             Request(
-            `/ClientWeb/pro/ajax/reserve.aspx?dialogid=&dev_id=${i}&lab_id=&kind_id=&room_id=&type=dev&prop=&test_id=&term=&Vnumber=&classkind=&test_name=&start=${date + " " + start}&end=${date + " " +end}&start_time=${s}&end_time=${e}&up_file=&memo=&act=set_resv&_=`
-            )
+            `/ClientWeb/pro/ajax/reserve.aspx?dialogid=&dev_id=${arr[i]}&lab_id=&kind_id=&room_id=&type=dev&prop=&test_id=&term=&Vnumber=&classkind=&test_name=&start=${date + " " + start}&end=${date + " " +end}&start_time=${s}&end_time=${e}&up_file=&memo=&act=set_resv&_=`
+            ).then((res) => {
+                  if(res.msg.includes('操作成功')) {
+                      alert('定好了')
+                  }
+            })
         }
     }
     else alert('请预约一个小时以上并注意合法时间！')
