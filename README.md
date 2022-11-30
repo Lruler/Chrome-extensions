@@ -2,7 +2,7 @@
 
 欢迎大家加入群聊(如果可以的话可以先打赏完了再进也行QAQ)
 
- <img src="img/qq.jpg" width = "300" height = "auto" alt="图片名称" align=center />
+ <img src="img/qq.png" width = "300" height = "auto" alt="图片名称" align=center />
 
 ### 如何添加到扩展程序
 
