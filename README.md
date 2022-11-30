@@ -1,6 +1,8 @@
 # 欢迎大家使用我的插件👏
 
+欢迎大家加入群聊(如果可以的话打赏完了再进也行QAQ)
 
+ <img src="img/qq.jpg" width = "300" height = "auto" alt="图片名称" align=center />
 
 ### 如何添加到扩展程序
 
@@ -18,7 +20,7 @@
 
 先如下图把插件固定在导航栏
 
-![](img/4.png)
+<img src="img/4.png" width = "300" height = "auto" alt="图片名称" align=center />
 
 
 
@@ -32,7 +34,7 @@
 + 现在就学，指临时抢座位，一般日期选择现在就行了
 + 六点开抢，用于六点钟抢第二天的座位，建议提前5-20分钟（过早可能会导致身份过期，抢座位失败）进入登陆页面，点击六点开抢，注意要把日期选择调整为第二天，然后就可以去刷刷视频啥的等待就行，大家可以 打开控制台(F12)或者鼠标右键进入开发者模式查看抢座位的结果
 
-![](img/3.png)
+<img src="img/3.png" width = "300" height = "auto" alt="图片名称" align=center />
 
 
 
@@ -40,6 +42,6 @@
 
 大哥大姐们打赏打赏吧QAQ 以后会写更多的便利小工具的
 
-![](img/zfb.jpeg)
+<img src="img/zfb.jpeg" width = "300" height = "auto" alt="图片名称" align=center />
 
-![](img/wx.jpeg)
+<img src="img/wx.jpeg" width = "300" height = "auto" alt="图片名称" align=center />
